@@ -1,0 +1,17 @@
+{
+  "name": "starfield-nocaps",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "./src/main.js",
+  "scripts": {
+    "build": "node ./src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ming",
+  "license": "MIT",
+  "dependencies": {
+    "wordlist-english": "^1.2.1"
+  }
+}
