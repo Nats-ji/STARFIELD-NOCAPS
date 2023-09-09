@@ -40,7 +40,7 @@ englishWords = englishWords.concat(wordlist["english"], wordlist["english/americ
 }
 
 let file = fs.readFileSync("./data/translate_en.txt", { encoding: "utf16le" });
-let lines = file.split("\n");
+let lines = file.split("\r\n");
 let new_lines = [];
 
 for (const line of lines) {
@@ -48,6 +48,12 @@ for (const line of lines) {
     const seprator_idx = line.indexOf("\t");
     const msgid = line.slice(0, seprator_idx);
     const msgstr = line.slice(seprator_idx + 1);
+
+    // skip mix casing
+    if (msgstr.endsWith(".") || msgstr != msgstr.toUpperCase() && msgstr != msgstr.toLowerCase()) {
+        new_lines.push(line);
+        continue;
+    }
 
     // parse msgstr
     let idx = 0;
@@ -91,16 +97,6 @@ for (const line of lines) {
             idx_b,
             idx_e,
         });
-    }
-    // check if all caps
-    let all_cap = true;
-    for (const word of words) {
-        if (word.word != word.word.toUpperCase()) all_cap = false;
-    }
-
-    if (!all_cap) {
-        new_lines.push(line);
-        continue;
     }
 
     // got a list of words, now match word_list
