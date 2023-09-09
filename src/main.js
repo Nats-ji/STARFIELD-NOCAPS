@@ -5,9 +5,9 @@ import wordlist from "wordlist-english";
 let englishWords = [];
 englishWords = englishWords.concat(wordlist["english"], wordlist["english/american"]);
 
-// exclude words
 {
-    let excludes = ["em"];
+    // exclude words
+    let excludes = ["em", "id"];
     for (const word of excludes) {
         const idx = englishWords.indexOf(word);
         englishWords.splice(idx, 1);
@@ -34,6 +34,7 @@ englishWords = englishWords.concat(wordlist["english"], wordlist["english/americ
         "UNEQUIP",
         "UNSELECT",
         "RADAWAY",
+        "CATALOGUE",
     ];
     includes.forEach((s, i) => (includes[i] = s.toLowerCase()));
     englishWords = englishWords.concat(includes);
