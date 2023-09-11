@@ -11,17 +11,11 @@ npm install
 npm run build
 ```
 
-You also need to change `$MAIN_Font` and `$MAIN_Font_Bold` inside `fontcnnfig_en.txt`, because the default main font only have capital letters.
+You also need to change `$MAIN_Font` and `$MAIN_Font_Bold` inside `fontcnnfig_en.txt`, because the default main font only have capital letters. (I already included a modified one)
 
 
 ## Localization
-If you want to generate localization for other languages, you need to make some tweaks inside `./src/main.js`, i'm not sure it will work out of box. 
-
-There are some problems you need to solve to use it on other languages:
-
-1. Does the built-in case conversion function in nodejs work for non-english letters?
-2. I used a npm package called [`wordlist-english`](https://www.npmjs.com/package/wordlist-english) to decide when to capitalize a word, so it won't change cases for acronyms. You need something equivlent in your language, or you will need to manually exclude the acronyms.
-3. There are some words doesn't exist in `wordlist-english`, i had to manually include [them](https://github.com/Nats-ji/STARFIELD-NOCAPS/blob/master/src/main.js#L17-L36).  
+Now support all languages.
 
 
 ![](https://staticdelivery.nexusmods.com/mods/4187/images/1246/1246-1694112916-1463291115.png)

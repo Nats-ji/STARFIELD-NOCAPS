@@ -1,0 +1,13 @@
+fontlib "fonts_en"
+map "$HandwrittenFont" = "Handwritten_Institute" Normal
+map "$MAIN_Font" = "NB Grotesk R Semibold" Normal
+map "$MAIN_Font_Bold" = "NB Grotesk R Bold" Bold
+map "$Controller_Buttons" = "Genesis Controller  Buttons" Normal
+map "$Controller_Buttons_inverted" = "Genesis Controller  Buttons inv" Normal
+map "$Controller_Buttons_thin" = "Genesis Controller  Buttons thin" Normal
+map "$ConsoleFont" = "Arial" Normal
+map "$DebugTextFont" = "Consolas" Normal
+map "$NB_Grotesk_Semibold" = "NB Grotesk R Semibold" Normal
+map "$NB_Grotesk_Bold" = "NB Grotesk R Bold" Bold
+validNameChars "`1234567890-=~!@#%^&*():_+QWERTYUIOP[]ASDFGHJKL;'ZXCVBNM,./qwertyuiop{}\\asdfghjkl;'zxcvbnm?|¡¢£¤¥¦§¨©ª«®¯°²³´¶·¸¹º»¼½¾¿ÄÀÁÂÃÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ ÿ ęóąśłżźćńĄĆĘŁŃÓŚŹŻ"
+validBookChars "`1234567890-=~!@#$%^&*():_+QWERTYUIOP[]ASDFGHJKL;'ZXCVBNM,./qwertyuiop{}\\asdfghjkl;'zxcvbnm<>?|¡¢£¤¥¦§¨©ª«®¯°²³´¶·¸¹º»¼½¾¿ÄÀÁÂÃÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ ÿ ęóąśłżźćń"
