@@ -243,6 +243,12 @@ function main() {
 
     child_process.execSync("tar -c -a -v -C ./output -f output/STARFIELD_NOCAPS.zip Data");
 
+    // remove fontconfigs to package lite version
+    for (const lang of langs) {
+        fs.rmSync(`./output/Data/interface/fontconfig_${lang.replace('-','')}.txt`)
+    }
+    child_process.execSync("tar -c -a -v -C ./output -f output/STARFIELD_NOCAPS_NOCONFIG.zip Data");
+
     console.log("Done!")
 }
 
